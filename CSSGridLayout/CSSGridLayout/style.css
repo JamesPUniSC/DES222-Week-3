@@ -23,6 +23,17 @@ body {
     max-width: 72em;
     font-family: Inter;
     /* TODO: set the main font color */
+
+    grid-template:
+        "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "oct oct oct oct oct oct oct oct oct oct oct oct" minmax(2em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ci1 ci1 ci1 ci2 ci2 ci2 ci3 ci3 ci3 ci4 ci4 ci4" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(1em, auto)
+        "ci5 ci5 ci5 ci6 ci6 ci6 ci7 ci7 ci7 ci8 ci8 ci8" minmax(8em, auto)
 }
 
 /* Here we define the aspects of style of our elements other than their grid layout */
@@ -62,55 +73,55 @@ body {
 
 /* now we create names for the grid areas for specific elements */
 #banner {
-    /* TODO: give the grid-area a name */
+    grid-area: ban;
 }
 
 #teamMemberCard1 {
-    /* TODO: give the grid-area a name */
+    grid-area: tm1;
 }
 
 #teamMemberCard2 {
-    /* TODO: give the grid-area a name */
+    grid-area: tm2;
 }
 
 #teamMemberCard3 {
-    /* TODO: give the grid-area a name */
+    grid-area: tm3;
 }
 
 #ourClientsTitle {
-    /* TODO: give the grid-area a name */
+    grid-area: oct;
 }
 
 #clientIcon1 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci1;
 }
 
 #clientIcon2 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci2;
 }
 
 #clientIcon3 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci3;
 }
 
 #clientIcon4 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci4;
 }
 
 #clientIcon5 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci5;
 }
 
 #clientIcon6 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci6;
 }
 
 #clientIcon7 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci7;
 }
 
 #clientIcon8 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci8;
 }
 
 /* Use a flexible layout grid */
